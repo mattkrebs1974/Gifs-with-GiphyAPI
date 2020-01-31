@@ -1,0 +1,30 @@
+body, html {
+  width: 100%;
+}
+
+.bg {
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('https://media3.giphy.com/media/C8gkEYivtQDlGzyAwp/giphy.webp?cid=790b761…&amp;rid=giphy.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-color:#323232;
+ 
+
+}
+
+#title {
+
+color:#007bff;
+font-size: 5vw;
+background-color: aliceblue;
+margin-top:30px;
+padding: 20px;
+
+opacity:.75;
+
+
+}
