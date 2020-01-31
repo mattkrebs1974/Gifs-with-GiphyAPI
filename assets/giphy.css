@@ -41,3 +41,77 @@ padding-bottom:-10px;
 #text2:hover{
 box-shadow: 0px 0px 20px 5px aliceblue;
 }
+
+#topic {
+
+  background-color: aliceblue;
+  opacity:.8;
+margin:0 50px 0 0px;
+
+}
+
+
+.buttons {
+
+
+color:aliceblue;
+background-color: #007bff;
+opacity:.8;
+padding:15px;
+font-variant: small-caps;
+border:0px;
+
+
+}
+
+.form-control::-webkit-input-placeholder { color:#007bff; font-variant: small-caps;}  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #007bff;font-variant: small-caps; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color:#007bff;font-variant: small-caps; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color:#007bff;font-variant: small-caps; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color:#007bff;font-variant: small-caps; }  /* Microsoft Edge */
+
+
+.buttons:hover{
+box-shadow: 0px 0px 20px 5px aliceblue;
+color:#007bff;
+background-color:aliceblue;
+
+
+
+border: 0px;
+opacity:80%;
+
+}
+
+#submit {
+
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background-color: aliceblue;
+  opacity:.8;
+  color:#007bff;
+  width: 80px;
+  margin: 0 0 0 80px;
+  font-variant: small-caps;
+  border:0px;
+
+}
+
+#submit:hover {
+
+box-shadow: 0px 0px 20px 5px #007bff;
+color:aliceblue;
+background-color: #007bff;
+border: 0px;
+opacity:80%;
+
+}
+
+
+#form {
+
+position:relative;
+
+}
