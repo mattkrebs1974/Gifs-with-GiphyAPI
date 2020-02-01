@@ -31,16 +31,41 @@ $("button").on("click", function () {
             for (var i = 0; i < results.length; i++) {
 
                 // Creating and storing a div tag
-                var sportsDiv = $("<br>"+"<div>");
+                var sportsDiv = $("<div>");
 
                 // Creating a paragraph tag with the result item's rating
                
+            sportsDiv.addClass("carousel-item");
+
+            // if (i=0) {
+            //     sportsDiv.addClass("active");
+
+            // }
+
+
+           
+           
+           
+         
+            //    sportsDiv.addClass("d-block");
+           
+
+
                 // var pp = $("<p>").text("import_datetime" + results[i].import_datetime);
 
                 // Creating and storing an image tag
                 var sportsImage = $("<img>");
+                
+                sportsImage.addClass("d-block");
+                sportsImage.addClass("img-fluid");
+
+                sportsImage.addClass("changeImage");
+                
+
+
                 // Setting the src attribute of the image to a property pulled off the result item
-                sportsImage.attr("id", sports+results[i]);
+                // sportsImage.attr("id", sports+results[i]);
+
                 sportsImage.attr("src", results[i].images.original.url);
 
                 // Appending the paragraph and image tag to the sportsDiv
@@ -73,6 +98,8 @@ $("button").on("click", function () {
 
 
                 $("#gifs-appear-here").prepend(sportsDiv);
+
+                $("#photoModal").modal("show");
             }
         });
 });

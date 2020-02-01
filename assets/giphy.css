@@ -114,4 +114,16 @@ opacity:80%;
 
 position:relative;
 
+
 }
+
+
+
+.centerModal {
+ margin: 0 auto 0 auto;
+  position: relative;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+
