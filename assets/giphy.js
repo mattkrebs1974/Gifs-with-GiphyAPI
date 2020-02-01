@@ -44,8 +44,6 @@ $("button").on("click", function () {
 
 
            
-           
-           
          
             //    sportsDiv.addClass("d-block");
            
@@ -93,7 +91,9 @@ $("button").on("click", function () {
     
             
 
-                
+
+                // $("#gifs-appear-here").find("carousel-item").first().addClass("active");
+
 
 
 
