@@ -34,7 +34,7 @@ font-variant: small-caps;
 }
 
 .directions{
-font-size:2vw;
+font-size:3vw;
 padding-bottom:-10px;
 }
 
@@ -60,6 +60,7 @@ opacity:.8;
 padding:15px;
 font-variant: small-caps;
 border:0px;
+margin-left: ;
 
 
 }
@@ -121,6 +122,15 @@ position:relative;
 .changeImage{
 
 width:100vw;
+
+}
+
+.gifdirections {
+
+  color:dodgerblue;
+  font-weight: bolder;
+  font-size: large;
+
 
 }
 

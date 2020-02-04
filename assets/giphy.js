@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var interests = ["Baseball", "Basketball", "Football", "Hockey"];
+    var interests = ["funny", "crying", "falling", "dancing"];
 
 function renderButtons() {
 
@@ -58,10 +58,16 @@ $.each(interests, function(index,value) {
         var newInterest = $("#topic").val().trim();
 
         interests.push(newInterest);
-
+        interests.splice(0,1);
         renderButtons();
 
+      
+
+     
+
     });
+
+   
 
    
 
@@ -112,14 +118,38 @@ $(document).on("click", ".buttons", function () {
                 // Creating a paragraph tag with the result item's rating
 
                 var p = $("<p>").text("Gif Rating: " + results[index].rating);
+
+                var pp =$("<p>").text("Title: " + results[index].title);
                
             sportsDiv.addClass("carousel-item");
+
+            sportsDiv.addClass("active");
+
+
+                p.addClass("gifdirections");
+                pp.addClass("gifdirections");
+
+
             
             
             
             sportsDiv.attr("number",index);
-            sportsDiv.addClass("active");
+               
 
+// function makeActive () {
+//     var title = $(".carousel-item").attr("number",0);
+
+//     if 
+
+
+
+
+//                 var PPPP = ppp.getAttribute("number");
+
+//                 console.log(PPPP);
+
+// }
+   
          
 
             // console.log("number"+number);
@@ -194,18 +224,24 @@ $(document).on("click", ".buttons", function () {
                 // Setting the src attribute of the image to a property pulled off the result item
                 // sportsImage.attr("id", sports+results[i]);
 
-                sportsImage.attr("src", results[index].images.original.url);
+                sportsImage.attr("src", results[index].images.original_still.url);
 
 
-                sportsImage.attr("data-still", results[index].images.fixed_height_still.url);
 
                 sportsImage.attr("data-animate", results[index].images.fixed_height.url);
 
+                sportsImage.attr("data-still", results[index].images.fixed_height_still.url);
+
+               
                 sportsImage.attr("data-state", "still");
 
                 sportsImage.addClass("gif");
 
+                sportsDiv.append(pp);
                 sportsDiv.append(p);
+               
+
+
 
 
 
@@ -222,6 +258,8 @@ $(document).on("click", ".buttons", function () {
                 sportsDiv.append(sportsImage);
 
                 getDiv.prepend(sportsDiv);
+
+                getDiv.prepend("<br>");
               
 
                 
@@ -245,11 +283,12 @@ $(document).on("click", ".buttons", function () {
 
 
 
-               
 
                
 
                 $("#photoModal").modal("show");
+
+                $("#mycarousel").carousel();
             });
         });
 
@@ -273,12 +312,12 @@ renderButtons();
     $(document).on("click", ".gif", function () {
         var state = $(this).attr("data-state");
 
-        if (state === "still") {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-state", "animate");
-        } else {
+        if (state === "animate") {
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
+        } else {
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
         }
     });
 
@@ -288,6 +327,20 @@ renderButtons();
 });
 
 
+// $(document).ready(function () {
+//     var state2 = $(".carousel-item").attr("number");
+
+//     if (state2 === "0") {
+     
+        
+
+//     }
+//         class{
+
+
+//     }
+
     
 
 
+// });
