@@ -12,7 +12,7 @@ This application can be found [here.](https://mattkrebs1974.github.io/Gifs-with-
 
 ## User Experience
 
-This App selects a city, gets its temperature and then challenges users to determine which of 4 cities currently is that warm. After the selection is made the user is informed whether his/her selection is correct/incorrect and the temperatures of all four cities is provided. 
+This App shows 10 of the most popular Gifs when any of the provided buttons are pressed. If the user wants to create a new keyword he/she can and that new keyword will replace one of the ones that are currently there. 
 
 
 
